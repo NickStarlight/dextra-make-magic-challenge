@@ -64,6 +64,7 @@ POTTER_API_CACHE_LIFESPAN=
 `Note: If you get any errors like 'Docker is not running', you're probably running Docker as sudo, and that's not good.https://docs.docker.com/engine/install/linux-postinstall/`
 
 `Note 2: The ports 80(HTTP), 5432(PostgreSQL) and 6379(Redis) should be free on your system since the development enviroment exposes them to the system.`
+
 `Note 3: The first time Sail downloads and configures the images may take A LONG TIME.`
 
 ## Error reporting
