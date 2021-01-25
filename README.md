@@ -11,6 +11,7 @@ This is my take on the challenge.
 If you're using the included Docker development enviroment:
 1. Docker
 2. Docker-compose
+3. Composer ^2.0
 
 If you're not using:
 1. PHP ^8.0
@@ -29,15 +30,14 @@ This project uses Docker for the development enviroment, it works on top of the 
 git clone https://github.com/NickStarlight/dextra-make-magic-challenge.git
 ```
 
-2. Install the base dependencies
+2. Install Laravel Sail
 ```bash
-composer install
+composer require laravel/sail --dev
 ```
 
 3. Configure your .env file:
 ```bash
 cp .env.example .env
-php artisan key:generate
 ```
 `Note: Most default values on the .env.example already work out of the box with the development enviroment, but feel free to change them as you please.`
 
@@ -64,6 +64,7 @@ POTTER_API_CACHE_LIFESPAN=
 `Note: If you get any errors like 'Docker is not running', you're probably running Docker as sudo, and that's not good.https://docs.docker.com/engine/install/linux-postinstall/`
 
 `Note 2: The ports 80(HTTP), 5432(PostgreSQL) and 6379(Redis) should be free on your system since the development enviroment exposes them to the system.`
+`Note 3: The first time Sail downloads and configures the images may take A LONG TIME.`
 
 ## Error reporting
 
