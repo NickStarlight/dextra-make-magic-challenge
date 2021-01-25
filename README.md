@@ -67,6 +67,11 @@ POTTER_API_CACHE_LIFESPAN=
 
 `Note 3: The first time Sail downloads and configures the images may take A LONG TIME.`
 
+6. Run the migrations
+```bash
+./vendor/bin/sail artisan migrate
+```
+
 ## Error reporting
 
 By default all errors are supressed, if you would like to enable more detailed error reports, change on your `.env`:
