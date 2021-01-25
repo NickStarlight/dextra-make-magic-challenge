@@ -29,14 +29,19 @@ This project uses Docker for the development enviroment, it works on top of the 
 git clone https://github.com/NickStarlight/dextra-make-magic-challenge.git
 ```
 
-2. Configure your .env file:
+2. Install the base dependencies
+```bash
+composer install
+```
+
+3. Configure your .env file:
 ```bash
 cp .env.example .env
 php artisan key:generate
 ```
 `Note: Most default values on the .env.example already work out of the box with the development enviroment, but feel free to change them as you please.`
 
-3. Configure your Potter API credentials:
+4. Configure your Potter API credentials:
 ```env
 # On .env
 
@@ -51,11 +56,6 @@ POTTER_API_CACHE_LIFESPAN=
 | POTTER_API_SECRET  | This is your secret key, get one here: https://github.com/dextra/challenges/blob/master/backend/MAKE-MAGIC-PT.md#1---cria%C3%A7%C3%A3o-de-usu%C3%A1rio.  |
 | POTTER_API_RETRY_COUNT  | This sets the retry policy of the SDK used on this project, on failure, the SDK will retry this many times again before failing.  |
 | POTTER_API_CACHE_LIFESPAN  | This sets the cache strategy for the responses received from the API, set a value in seconds, if you don't want cache anything at all, set it to zero.  |
-
-4. Install the base dependencies
-```bash
-composer install
-```
 
 5. Start the development enviroment
 ```bash
