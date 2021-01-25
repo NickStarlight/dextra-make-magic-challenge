@@ -94,5 +94,7 @@ All tests can be ran using the Laravel Sail CLI:
 ./vendor/bin/sail artisan test
 ```
 
+This project also uses [Github Actions](https://github.com/NickStarlight/dextra-make-magic-challenge/actions) for automated testing.
+
 ## License
 [WTFPL](https://choosealicense.com/licenses/wtfpl/)
